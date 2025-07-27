@@ -427,6 +427,7 @@ const QuizPage = ({ playerName, setCurrentPage }) => {
     return <QuizResultScreen />;
   }
 
+  return <QuizQuestionScreen />;
 };
 
 export default QuizPage;
