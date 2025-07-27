@@ -1,14 +1,24 @@
 {
   "name": "gigiceria-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Platform pembelajaran interaktif untuk edukasi kesehatan gigi anak-anak Kelurahan Padangsari",
+  "author": "Tim Developer GigiCeria",
+  "keywords": [
+    "edukasi",
+    "kesehatan gigi",
+    "anak-anak",
+    "react",
+    "quiz",
+    "pembelajaran"
+  ],
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.4",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.5.2",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -16,7 +26,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "npm start",
+    "build:prod": "npm run build && echo 'Build completed! Ready for deployment.'",
+    "preview": "npx serve -s build -l 3000",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +50,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": ".",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0"
   }
 }
